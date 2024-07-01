@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+  *{
+    margin:0px;
+    padding:0px;
+  }
+  body{
+    background:gray;
+  }
+#maindivboxcenter{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius:50%;
+    height:40px;
+    width:40px;
+    cursor:crosshair;
+    margin-left:20px;
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+#maindivboxcenter:hover {
+    background:red;
+}
+
+/* List CSS */
+#list-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+li {
+    background-color: #fff385;
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Added to align buttons to the right */
+    height:400px;
+    width: 300px;
+    margin:10px;
+    border-radius: 10px;
+    overflow:hidden scroll;
+   
+}
+
+li span {
+    font-size: 12px;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow:hidden scroll;
+    
+}
+#editBtn,#deleteBtn{
+    background-color: #c6aaff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px; /* Adjusted margin for spacing */
+    cursor:pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 60px;
+    
+}
+
+#editBtn{
+    background-color:green;
+    color:white;
+}
+#editBtn:hover {
+    background-color:black;
+}
+#deleteBtn{
+  background-color:green;
+  color:white;
+}
+#deleteBtn:hover {
+    background-color:red;
+}
+/* Create Note Popup CSS */
+#popupContainer {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:350px;
+    height:400px;
+    background-color: white;
+    border: 1px solid red;
+    word-wrap:break-word;
+    
+}
+#note-text{
+  width:348px;
+  height:310px;
+  resize:none;
+}
+#btn-container {
+    display: flex;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: #8c53ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+   
+    margin: 10px;
+}
+
+#closeBtn {
+    background-color: gainsboro;
+}
+
+
+/* Editing Popup CSS */
+#editing-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:310px;
+    height:400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: #8c53ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+#submitBtn:hover{
+  background:black;
+}
+#closeBtn {
+    background-color:red;
+}
+#closeBtn:hover{
+  background:black;
+}
+
+.back{
+    float: right;
+    margin-right:20px;
+}
+  </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="index.html">
+            Back
+        </a>
+    </div>
+   <div id="maindivboxcenter" onclick="popup()">
+               +
+    </div>
+     <br><br><br><br><br>
+    <div id="list-container">
+      <ul id="notes-list"></ul>
+    </div>
+</body>
+
+<script>
+ /*************************************************************************
+ * Create Note Popup Logic
+ **************************************************************************/
+
+function popup() {
+
+    const popupContainer = document.createElement("div");
+
+    popupContainer.innerHTML = `
+    <div id="popupContainer">
+        <h3>
+        <center>
+        New Note
+        </center>
+        </h3>
+        <textarea id="note-text">
+        
+        </textarea>
+        <div id="btn-container">
+            <button id="submitBtn" onclick="createNote()">
+              Create Note
+            </button>
+            <button id="closeBtn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    `;
+    document.body.appendChild(popupContainer);
+}
+
+function closePopup() {
+    const popupContainer = document.getElementById("popupContainer");
+    if(popupContainer) {
+        popupContainer.remove();
+    }
+}
+
+function createNote() {
+
+    const popupContainer = document.getElementById('popupContainer');
+    const noteText = document.getElementById('note-text').value;
+    if (noteText.trim() !== '') {
+        const note = {
+        id: new Date().getTime(),
+        text: noteText
+        };
+
+        const existingNotes = JSON.parse(localStorage.getItem('notes')) || [];
+        existingNotes.push(note);
+
+        localStorage.setItem('notes', JSON.stringify(existingNotes));
+
+        document.getElementById('note-text').value = '';
+
+        popupContainer.remove();
+        displayNotes();
+    }
+}
+
+
+/*************************************************************************
+ * Display Notes Logic
+ **************************************************************************/
+
+function displayNotes() {
+    const notesList = document.getElementById('notes-list');
+    notesList.innerHTML = '';
+
+    const notes = JSON.parse(localStorage.getItem('notes')) || [];
+
+    notes.forEach(note => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+        <span>${note.text}</span>
+        <div id="noteBtns-container">
+        <br>
+        <hr>
+            <button id="editBtn" onclick="editNote(${note.id})">
+            UPDATE
+            </button>
+            <button id="deleteBtn" onclick="deleteNote(${note.id})">
+            DELETE
+            </button>
+         <hr>
+        </div>
+        `;
+        notesList.appendChild(listItem);
+    });
+}
+
+
+/*************************************************************************
+ * Edit Note Popup Logic
+ **************************************************************************/
+
+function editNote(noteId) {
+    const notes = JSON.parse(localStorage.getItem('notes')) || [];
+    const noteToEdit = notes.find(note => note.id == noteId);
+    const noteText = noteToEdit ? noteToEdit.text : '';
+    const editingPopup = document.createElement("div");
+    
+    editingPopup.innerHTML = `
+    <div id="editing-container" data-note-id="${noteId}">
+        <h3>Edit Note</h3>
+        <textarea id="note-text">${noteText}</textarea>
+        <div id="btn-container">
+            <button id="submitBtn" onclick="updateNote()">Done</button>
+            <button id="closeBtn" onclick="closeEditPopup()">Cancel</button>
+        </div>
+    </div>
+    `;
+
+    document.body.appendChild(editingPopup);
+}
+
+function closeEditPopup() {
+    const editingPopup = document.getElementById("editing-container");
+
+    if(editingPopup) {
+        editingPopup.remove();
+    }
+}
+
+function updateNote() {
+    const noteText = document.getElementById('note-text').value.trim();
+    const editingPopup = document.getElementById('editing-container');
+
+    if (noteText !== '') {
+        const noteId = editingPopup.getAttribute('data-note-id');
+        let notes = JSON.parse(localStorage.getItem('notes')) || [];
+
+        // Find the note to update
+        const updatedNotes = notes.map(note => {
+            if (note.id == noteId) {
+                return { id: note.id, text: noteText };
+            }
+            return note;
+        });
+
+        // Update the notes in local storage
+        localStorage.setItem('notes', JSON.stringify(updatedNotes));
+
+        // Close the editing popup
+        editingPopup.remove();
+
+        // Refresh the displayed notes
+        displayNotes();
+    }
+}
+
+/*************************************************************************
+ * Delete Note Logic
+ **************************************************************************/
+
+function deleteNote(noteId) {
+    let notes = JSON.parse(localStorage.getItem('notes')) || [];
+    notes = notes.filter(note => note.id !== noteId);
+
+    localStorage.setItem('notes', JSON.stringify(notes));
+    displayNotes();
+}
+
+displayNotes();
+    </script>
+
+</html>

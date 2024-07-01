@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login form</title>
+    <style>
+    *{
+      margin:0px;
+      padding:0px;
+    }
+    body{
+      background:#DADCFD;
+    }
+      .container{
+        width:300px;
+        height:300px;
+        border:1px solid black;
+        border-top-left-radius:50px;
+        margin-left:30px;
+        margin-top:150px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        background:black;
+        color:white;
+      }
+      .container:hover{
+        background:#5C5454;
+      }
+      .username{
+        color:#57FF70;
+      }
+      .password{
+        color:#57FF70;
+      }
+      .Login{
+        margin-top:-90px;
+      }
+      .login-btn{
+        width:100px;
+        height:30px;
+        cursor:pointer;
+        
+      }
+      .back{
+        width:100px;
+        height:30px;
+      }
+      @media (min-width:414px) {
+        .container{
+        width:300px;
+        height:300px;
+        border:1px solid black;
+        border-top-left-radius:50px;
+        margin-left:60px;
+        margin-top:300px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        background:black;
+        color:white;
+      }
+      .container:hover{
+        background:#5C5454;
+      }
+      .username{
+        color:#57FF70;
+      }
+      .password{
+        color:#57FF70;
+      }
+      .Login{
+        margin-top:-90px;
+      }
+      .login-btn{
+        width:100px;
+        height:30px;
+        cursor:pointer;
+        
+      }
+      .back{
+        width:100px;
+        height:30px;
+
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <br><br><br><br>
+        <h3 class="Login">
+          
+          Login
+          
+        </h3>
+        <br><br><br>
+        <label for="username">
+          Username
+          <br>
+        </label>
+        <input type="text" name="username" class="username"/>
+        <label for="password">
+          <br><br>
+          Password
+          <br>
+        </label>
+        <input type="password" name="password" class="password"/>
+        <br><br><br>
+        <input type="submit" class="login-btn" value="Login" />
+        <button class="back">
+          <a href="index.html">Back</a>
+        </button>
+      </form>
+    </div>
+    <script>
+      const form = document.querySelector("form")
+      
+      form.addEventListener("submit", (e) => {
+        e.preventDefault()
+      
+        const username = form.username.value
+        const password = form.password.value
+      
+        const authenticated = authentication(username, password)
+      
+        if (authenticated) {
+          window.location.href = "logout.html"
+        } else {
+          alert("wrong")
+        }
+      })
+      
+      // function for checking username and password
+      
+      function authentication(username, password) {
+        if (username === "admin" && password === "password") {
+          return true
+        } else {
+          return false
+        }
+      }
+    </script>
+  </body>
+</html>

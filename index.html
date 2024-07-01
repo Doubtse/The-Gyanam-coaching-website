@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    book
+  </title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+
+
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  background-image:url("/Copy of Green Modern Business Marketing Blog Banner (1).png");
+  background-size:360px 250px ;
+  background-repeat:no-repeat;
+}
+/* top bala hai ok apna college ka logo hai ok maindiv ma ok*/
+.maindiv{
+  width:360px;
+  height:60px;
+  border:0px solid black;
+  box-shadow:0px 0px 2px #B3B3BE;
+  position:fixed;
+  margin-top:px;
+  background:white;
+  z-index:2;
+}
+.sidebar_menu{
+  position: fixed;
+  height:1100px;
+  width: 380px;
+  left:385px;
+  margin-top:-55px;
+  background:#759B95;
+  float:right;
+  overflow:hidden;
+  transition:all 0.1s linear;
+}
+#sliderbutton{
+  display: none;
+}
+.btn_two{
+  width:40px;
+  height:40px;
+  text-align:center;
+  border:1px solid white;
+  border-radius:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  float:right;
+  margin-right:35px;
+  margin-top:20px;
+  cursor:pointer;
+}
+.btn_two:hover{
+  color:black;
+  background:white;
+}
+#sliderbutton:checked ~ .sidebar_menu{
+  left: 0;
+}
+#sliderbutton:checked ~ .btn_one i{
+  opacity: 0;
+}
+#sliderbutton:checked ~ .sidebar_menu .btn_two i{
+  opacity: 1;
+}
+.btn_one{
+  float:right;
+  width:40px;
+  height:40px;
+  margin-top:-22px;
+}
+.studentnote{
+  color:white;
+  
+}
+/* GYANAM  DEFENCE ACADEMY ka logo hai ok */
+  .GYANAMDEFENCEACADEMY{
+    font-size:15px;
+    margin-left:10px;
+    color:red;
+    border:none;
+    background: white;
+  }
+/* slider button hai ok */
+ sliderbutton{
+   width:40px;
+   height:40px;
+   float:right;
+   margin-top:-40px;
+ }
+ /* gyanam defence academy text hai  */
+   .gyanamdefenceacademytexthai{
+     width:358px;
+     height:100px;
+     border:1px solid red;
+     color:black;
+     border:none;
+   }
+   /*gaurav ka image hai ok*/
+    .img1{
+      width:200px;
+      height:200px;
+      border:2px dotted darkgray;
+      margin-left:64px;
+      border-radius:50%;
+      position:relative;
+    }
+    .backgroundgaurav{
+     width:185px;
+     height:185px;
+     border-radius:50%;
+     margin-top:8px;
+     margin-left:8px;
+     margin-left:-5px;
+     margin-top:-5px;
+   }
+    .img2{
+     width:180px;
+     height:170px;
+     border-radius:50%;
+     margin-top:14px;
+     margin-left:3px;
+   }
+    .img3{
+     width:40px;
+     height:40px;
+     margin-top:30px;
+     margin-left:60px;
+     z-index:1;
+     position:absolute;
+   }
+    .img4{
+      width:40px;
+      height:40px;
+      margin-top:30px;
+      margin-left:245px;
+      z-index:1;
+      position:absolute;
+    }
+    .img5{
+      width:40px;
+      height:40px;
+      margin-top:120px;
+      margin-left:50px;
+      z-index:1;
+      position:absolute;
+    }
+    .logic{
+      margin-top:160px;
+      margin-left:60px;
+      z-index:1;
+      position:absolute;
+      font-size:10px;
+      color:blue;
+    }
+    .Algorithms{
+      margin-top:73px;
+      margin-left:249px;
+      z-index:1;
+      position:absolute;
+      font-size:8px;
+      color:blue;
+    }
+    .Data{
+      margin-top:160px;
+      margin-left:270px;
+      z-index:1;
+      position:absolute;
+      font-size:8px;
+      color:blue;
+    }
+    .Structures{
+      margin-top:170px;
+      margin-left:258px;
+      z-index:1;
+      position:absolute;
+      font-size:8px;
+      color:blue;
+    }
+    .img6{
+      width:35px;
+      height:35px;
+      margin-top:120px;
+      margin-left:244px;
+      z-index:1;
+      position:absolute;
+    }
+    .boxok div{
+      width:7px;
+      height:7px;
+      border:1px solid blue;
+      float:right;
+    }
+    .boxokq{
+      margin-right:55px;
+      margin-top:8px;
+    }
+    .ProblemSolving{
+      width:80px;
+      position:absolute;
+      margin-top:-10px;
+      font-size:10px;
+      margin-left:64px;
+      color:black;
+    }
+    .back{
+      background:#DA049C;
+    }
+    
+    .gauravpikok{
+      margin-left:10px;
+     margin-top:30px;
+ }
+  
+  
+/* COMPETIFIVE EXAM DETAILS hai ok */
+    .companilogo{
+      width:100%;
+      height:610px;
+      background:#EEEFFF;
+    }
+    .sscgd{
+      width:100px;
+      height:100px;
+      border:1px solid black;
+      border-radius:50px;
+      float:right;
+      margin-right:15px;
+      margin-top:50px;
+      cursor:pointer;
+    }
+   
+   .sscgd1{
+     width: 100px;
+     height: 100px;
+     border: 1px solid black;
+     border-radius: 50px;
+     cursor: pointer;
+    
+   }
+/*BatchOverview text bala hao ok*/
+    .BatchOverview{
+      width:100%;
+      height:420px;
+      font-size:15px;
+      overflow:hidden scroll;
+    }
+   
+   .timedetaisl{
+      width:330px;
+      height:250px;
+      border:1px dashed blue;
+      border-bottom-right-radius:40px;
+      border-top-left-radius:40px;
+      margin-top:25px;
+      color:black;
+   }
+   .timedetaisltopick{
+     width:299px;
+     height:250px;
+     border:1px dashed blue;
+     margin-top:25px;
+     color:black;
+   }
+/* details take ka design hai ok*/
+    .what{
+      font-size:21px;
+      margin-left:80px;
+    }
+    .lern{
+      color:blue;
+    }
+    .details{
+      width:300px;
+      background:#ECECEC;
+      border-radius:5px;
+      text-align:center;
+      margin-left:28px;
+      color:blue;
+    }
+    .summary{
+      color:black;
+    }
+/*  */
+    .Topmethod{
+      width:100%;
+      height:750px;
+      overflow:hidden scroll;
+    }
+    .Topmethod1{
+      width:140px;
+      height:100px;
+      border:none;
+      background:#F39F1B;
+      border-bottom-right-radius:100%;
+    }
+   
+/*WhoisC++DSAfor bala digine hai ok do box hai ok */
+    .WhoisCDSAfor{
+      width:100%;
+      height:800px;
+      background:#DCDEF8;
+      overflow: hidden scroll;
+    }
+    .WhoisCDSAfor1{
+      font-size:20px;
+    }
+    .WhoisCDSAfor2{
+      color:blue;
+    }
+    .boxhaishadowbala1{
+      width:175px;
+      height:400px;
+      background:white;
+      box-shadow:0px 2px 0px 0px blue;
+      margin-left:98px;
+      border-radius:20px;
+      text-align:center;
+    }
+    .boxhaishadowbala2{
+      width:175px;
+      height:400px;
+      background:white;
+      box-shadow:0px 2px 0px 0px blue;
+      margin-left:98px;
+      border-radius:20px;
+      text-align:center;
+    }
+    .studenticon{
+      width:100px;
+      height:100px;
+      margin-top:0px;
+      position:relative;
+    }
+    .STUDENTS{
+      color:red;
+      margin-top:80px;
+      position:absolute;
+      z-index:1;
+      margin-left:6px;
+    }
+    .doubtsessioniconsitting{
+      width:80px;
+      height:60px;
+      position:absolute;
+      margin-left:-40px;
+      margin-top:5px;
+    }
+/*background do colir mixed bala ok uper sa text hai ok */
+ .backboxa1{
+     width:100%;
+     height:1370px;
+     position:relative;
+   }
+  .backbox{
+     width:70px;
+     height:70px;
+     border-radius:50%;
+     border:none;
+     float:right;
+     border:1px solid darkslategray;
+   }
+  .backbox{
+     width:70px;
+     height:70px;
+     border-radius:50%;
+     border:none;
+     float:right;
+     border:1px solid darkslategray;
+  }
+  .backbox{
+     width:70px;
+     height:70px;
+     border-radius:50%;
+     border:none;
+     float:right;
+    border:1px solid darkslategray;
+   }
+  .backbox{
+     width:70px;
+     height:70px;
+     border-radius:50%;
+     border:none;
+     float:right;
+     border:1px solid darkslategray;
+   }
+  .backbox{
+     width:70px;
+     height:70px;
+     border-radius:50%;
+     border:none;
+     float:right;
+     border:1px solid darkslategray;
+   }
+  .backboxcolor{
+     position:absolute;
+     margin-top:-1376px;
+     opacity:0.97;
+     width:100%;
+     height:1386px;
+     background-image:linear-gradient(#5764ED,#16DCB4)
+     
+  }
+  .LiveMentorshipSessions{
+    width:358px;
+    height:80px;
+    border:1px solid black;
+    color:white;
+    border:none;
+  }
+  .LiveMentorshipSessionsfontsize{
+    font-size:25px;
+    color:white;
+  }
+  .Mentorship{
+    color:#E0DE1C;
+  }
+  .Linkedin{
+    width:358px;
+    height:100px;
+    border:1px solid black;
+    color:white;
+    font-size:15px;
+    border:none;
+  }
+  .Linkedina{
+    width:329px;
+    height:100px;
+    border:1px solid black;
+    color:white;
+    font-size:15px;
+    float:right;
+    border:none;
+  }
+  .Linkedin1{
+    font-size:20px;
+  }
+  .Resume{
+    font-size:20px;
+    color:#E9EAED;
+  }
+/* Gaurav ka details hai aur pik hai ok */
+  .Gauravdetailsok{
+    width:100%;
+    height:700px;
+  }
+  .Gauravdetailsokimg{
+    width:130px;
+    height:130px;
+    border:1px solid black;
+    border-radius:50%;
+    background:#D9FDFD;
+    border:none;
+  }
+  .Gauravdetailsokimgname{
+    color:blue;
+  }
+  .Gauravdetailsokapnaimg{
+    width:100px;
+    height:40px;
+  }
+  .Million{
+    color:blue;
+  }
+/*certificate details hai ok */
+  .certificate{
+    width:100%;
+    height:730px;
+    background:#EDEEFA;
+  }
+  .certificate1{
+    font-size:40px;
+  }
+  .certificate2{
+    color:blue;
+  }
+  .imgcertificate{
+    width:40px;
+    height:50px;
+    border:1px solid black;
+    margin-left:15px;
+    border:none;
+  }
+  .certificatetext{
+   float:right;
+    margin-top:-50px;
+    margin-right:45px;
+  }
+  .certificatetext1{
+    font-size:14px;
+    float:right;
+    margin-top:-50px;
+    margin-right:30px;
+  }
+  .certificatetext1a{
+    font-size:20px;
+  }
+  .certificatebutton{
+    width:160px;
+    height:50px;
+    border:1px solid black;
+    background:#CD9A12;
+    border-radius:5%;
+  }
+  .certificatebutton1{
+    float:left;
+    margin-top:10px;
+    color:white;
+    font-size:18px;
+    margin-left:25px;
+  }
+  .certificateimgsir{
+    width:300px;
+    height:200px;
+  }
+  
+/*QUESTIONS hai ok last wala*/  
+  .QUESTIONS{
+    width:100%;
+    height:2500px;
+    background:gray;
+  }
+.QUESTIONSa{
+  font-size:25px;
+}
+.anything{
+  color:white;
+}
+.anythinga{
+  color:red;
+}
+
+/*lastdetailsbala diging hai ok*/
+.lastdetailsbala{
+  width:100%;
+  height:900px;
+}
+.education{
+  margin-left:20px;
+  color:black;
+}
+.Course{
+  margin-left:50px;
+  margin-top:-100px;
+}
+.collegelogo{
+  margin-left:10px;
+}
+.hindiwordok{
+  color:#18A269;
+}
+/* window open wala digine hai ok css coad ok*/
+.btn-login2{
+padding:10px 15px;
+background-color:black;
+color:white;
+cursor:pointer;
+}
+.loginform2{
+width:290px;
+height:400px;
+padding:30px 20px;
+background:white;
+position:absolute;
+left:50%;
+top:-90%;
+transition:0s;
+box-shadow:0px 0px 10px 3px blue;
+transform:translate(-50%,-58%)
+
+}
+.showloginform2{
+top:50%;
+}
+input2{
+width:100%;
+height:35px;
+margin-bottom:15px;
+font-size:40px;
+}
+#span2{
+position:absolute;
+right:0px;
+width:30px;
+cursor:pointer;
+color:white;
+line-height:30px;
+height:30px;
+background:red;
+text-align:center;
+top:0px;
+}
+.spanok2{
+width:330px;
+height:30px;
+border:1px solid black;
+position:fixed;
+left:-0px;
+background:black;
+top:-4px;
+}
+
+.COMMERWEBSITE2{
+color:white;
+margin-top:5px;
+}
+.REGISTRATIONdetails{
+  width:250px;
+  height:30px;
+  border:1px solid red;
+  border-top-right-radius:50px;
+  border-bottom-right-radius:50px;
+}
+.PaymentNow{
+  width:150px;
+  height:30px;
+  cursor:pointer;
+  border:1px solid blueviolet;
+}
+/* window scane hai ok */
+.btn-login3{
+    padding:10px 15px;
+    background-color:black;
+    color:white;
+    cursor:pointer;
+  }
+  .loginform3{
+    width:290px;
+    height:220px;
+    padding:30px 20px;
+    background:white;
+    position:absolute;
+    left:50%;
+    top:-90%;
+    z-index:1;
+    transition:0s;
+    box-shadow:0px 0px 10px 3px blue;
+    transform:translate(-50%,-50%)
+   
+  }
+  .showloginform3{
+   top:50%;
+  } 
+  input3{
+    width:100%;
+    height:35px;
+    margin-bottom:15px;
+    font-size:40px;
+  }
+   #span3{
+    position:absolute;
+    right:0px;
+    width:30px;
+    cursor:pointer;
+    color:white;
+    line-height:30px;
+    height:30px;
+    background:red;
+    text-align:center;
+    top:0px;
+  }
+  .spanok3{
+    width:330px;
+    height:30px;
+    border:1px solid black;
+    position:fixed;
+    left:-0px;
+    background:black;
+    top:-4px;
+  }
+  
+  .COMMERWEBSITE3{
+    color:white;
+    margin-top:5px;
+  }
+  .pdflogo{
+    width:358px;
+    height:300px;
+    border:1px solid black;
+    border: none;
+  }
+  .noteslogohaiok{
+   width:80px;
+   height:80px;
+   border-radius:50px;
+   border:1px solid black;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   cursor:pointer;
+  }
+  .noteslogohaiok:hover{
+    background:black;
+  }
+/* form digine ka css coad hai ok */
+.container{
+	width:320px;
+	background-color:pink;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+}
+.input{
+	width:300px;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid #777777;
+	margin-bottom: 20px;
+	font-size: 16px;
+	outline: none;
+	border-top-right-radius:50px;
+}
+.btn{
+	border: none !important;
+	cursor: pointer;
+	background-color: #32cd9c;
+	margin: 15px 0;
+	font-size: 16px;
+	width: 100%;
+	padding: 14px;
+}
+.btn:hover{
+	background-color: #1f7d5f;
+	color: white;
+}
+/*social media page code CSS*/
+.insta{
+  width:30px;
+  height:30px;
+  float: left;
+  margin-left:65px;
+}
+.imgbutton{
+  background:white;
+  border:none;
+}
+</style>
+<body>
+  
+<form action="/APNA COLLEGE WEB OK/demoa.html">  
+<div class="maindiv">
+  <button class="imgbutton">
+    <div class="GYANAMDEFENCEACADEMY" data-aos="fade-down" data-aos-easing="linear"
+     data-aos-duration="2000">
+      <br>
+    THE  GYANAM <br>ACADEMY
+    </div>
+   </button>
+   <!--- slider digine hai ok ---->
+   <div>
+     <input type="checkbox" id="sliderbutton">
+     <div class="btn_one">
+       <label for="sliderbutton">
+         <img src="8104237.png" class="btn_one">
+       </label>
+     </div>
+     <div class="sidebar_menu">
+     
+       <div class="btn_two">
+         <label for="sliderbutton">
+           X
+         </label>
+       </div>
+       <br>
+       <center>
+       <u class="studentnote">
+         <br><br><br><br><br><br><br>
+         <br>
+         <a href="/studentnote.html">Student Note</a>
+       </u>
+       </center>
+     </div>
+   </div>
+   
+  </div>
+</form>
+<!---text hai gyanam defence academy ka ok--->
+<br><br><br><bR><br><bR><br>
+<div class="gyanamdefenceacademytexthai" data-aos="zoom-in" data-aos-easing="linear"
+     data-aos-duration="2000">
+  <center>
+    <b>
+    THY  GYANAM ACADEMY
+      <br>
+      Coaching Available For All 
+      <br>
+      Govt.Competitive Exams
+    </b>
+    <br><br>
+    <mark>
+      📞9939898183,732389818 
+    </mark>
+  </center>
+</div>
+<!------------------------------>
+
+
+<div class="gauravpikok">
+
+<div class="img1">
+  <div class="backgroundgaurav">
+   <img src="/PSX_20240604_102934.png" width="210">
+  </div>
+ <br>
+  <div class="boxokq">
+  <div class="boxok">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="back"></div>
+    <div class="back"></div>
+    <div class="back"></div>
+  </div>
+  </div>
+  
+  <br>
+  
+  <span class="ProblemSolving">
+    <CENTER>
+    DIRECTOR
+    <br>
+     ⬇️
+     <br>
+    LAL JEE RaY
+    
+    </CENTER>
+  </span>
+  
+</div>
+</div>
+<!------------------------------>
+<br><br><br><br><br><br>
+<!---window open ok--->
+<div class="overlay2"></div>
+<div class="loginform2">
+  <div class="spanok2">
+    <center>
+      <div class="COMMERWEBSITE2">
+       REGISTRATION Now
+      </div>
+    </center>
+    <nav id="span2">
+      &times;
+    </nav>
+  </div>
+    <br>
+    <center>
+    <input type="name" placeholder="Enter Your Name" class="REGISTRATIONdetails">
+    <br><br>
+    <input type="name"placeholder=" Enter Your Father Name" class="REGISTRATIONdetails">
+    <br><br>
+    <input type="name" placeholder="Enter Your Mother Name" class="REGISTRATIONdetails">
+    <br><br>
+    <input type="number" placeholder="Enter Your Phone Number" class="REGISTRATIONdetails">
+    <br><br>
+    <input type="email" placeholder="Enter Your Email" class="REGISTRATIONdetails">
+    <br><br>
+    <input type="text" placeholder="Enter Your Address" class="REGISTRATIONdetails"> 
+    <br><br><br><br>
+    <button class="PaymentNow" onclick="showmodal3()">
+      Payment Now 
+    </button>
+    </center>
+</div>
+<!----window scane hai ok---->
+<div class="overlay3"></div>
+<div class="loginform3">
+  <div class="spanok3">
+    <center>
+      <div class="COMMERWEBSITE3">
+        Scane Now
+      </div>
+    </center>
+    <nav id="span3">
+      &times;
+    </nav>
+  </div>
+  <img src="/Screenshot_2024-06-07-00-02-59-48.jpg" width="290">
+</div>
+<!------------------------------>
+
+
+<div class="companilogo">
+ <center>
+   <marquee class="hindiwordok">
+   हम भीड़ में दौडाना नहीं जीताना सिखाते हैं...
+   </marquee>
+   <br><br>
+   <b>
+    
+     COMPETIFIVE EXAM DETAILS
+   
+    </a>
+   </b>
+   <br><br><br>
+ </center>
+ <center>
+    <div class="sscgd1">
+      <BR><BR>
+      <mark>& OTHER EXAMS</mark>
+    </div>
+   <div class="sscgd">
+     <br><br>
+     <a href="/SSC-GD.html">
+        SSC-GD
+     </a>
+   </div>
+   <div class="sscgd">
+     <br><br>
+     <a href="/RAILWAY.html">
+       RAILWAY
+     </a>
+   </div>
+   <div class="sscgd">
+     <br><br>
+       <a href="/RPFexamdetail.html">
+         RPF
+       </a>
+   </div>
+   <div class="sscgd">
+     <BR><BR>
+       <a href="/BIHAR POLICE.html">
+          BIHAR POLICE
+       </a>
+   </div>
+   <div class="sscgd">
+     <BR><BR>
+       <a href="/AGRNIVEER.html">
+         AGRNIVEER
+       </a>
+   </div>
+   <div class="sscgd">
+     <br><br>
+     <a href="/BANKING.html">
+       BANKING
+     </a>
+   </div>
+ </center>
+
+</div>
+<!------------------------------>
+
+
+<div class="BatchOverview">
+ <center>
+   <BR><BR>
+     <B>
+       FORM TIME DETAILS
+     </B>
+     <BR><br><br><rb>
+   <b>
+     <details>
+       <summary>
+          SSC-GD FORM-FILL TIME DETAILS
+       </summary>
+       <center>
+         <br>
+         <div class="timedetaisl">
+           <br><br>
+           <mark>
+             What is the last date for SSC GD Form 2024?
+           </mark>
+           <br>
+           ⬇️
+           <br>
+           December 31, 2023
+           SSC GD Application 2024: The Staff Selection Commission (SSC) invited the SSC GD 2024 application forms from November 24 to December 31, 2023. The last date to pay the SSC GD application fee 2024 was January 1, 2024.
+         </div>
+       </center>
+     </details>
+   </b>
+   <br><br>
+   <b>
+     <details>
+       <summary>
+         RAILWAY FORM-FILL TIME DETAILS
+       </summary>
+       <div class="timedetaisl">
+        <br><br>
+        <mark>
+          रेलवे का फॉर्म कब भरा जाएगा 2024?
+        </mark>
+        <br>
+        ⬇️
+        <br>
+        रेलवे भर्ती 2024 महत्वपूर्ण तिथियाँ
+        इवेंट तिथि
+        नोटिफिकेशन जारी होने की तिथि 12 मार्च 2024
+        आवेदन शुरू होने की तिथि 12 मार्च 2024
+        आवेदन के लिए अंतिम तिथि 12 अप्रैल 2024 (रात्रि 11:59 बजे तक)
+       </div>
+     </details>
+   </b>
+   <br><br>
+   <b>
+     <details>
+       <summary>
+         RPF FORM-FILL TIME DETAILS
+       </summary>
+       <div class="timedetaisl">
+       <br><br>
+       <mark>
+         आरपीएफ का फॉर्म कब आएगा?
+       </mark>
+       <br>
+       ⬇️
+       <br>
+       आरपीएफ कांस्टेबल आवेदन पत्र 2024 आधिकारिक वेबसाइट पर 15 अप्रैल से 14 मई 2024 तक जारी किया जाएगा। आरपीएफ कांस्टेबल आवेदन पत्र 2024 का विवरण नीचे दिया गया है। उम्मीदवारों को सलाह दी जाती है कि वे लेख की जांच करें। आरपीएफ कांस्टेबल आवेदन पत्र 2024: आरपीएफ कांस्टेबल आवेदन पत्र 2024 जारी कर दिया गया है।
+       </div>
+     </details>
+   </b>
+   <br><br>
+   <b>
+     <details>
+       <summary>
+          AGRNIVEER FORM-FILL TIME DETAILS
+       </summary>
+       <div class="timedetaisl">
+       <br><br>
+       <mark>
+         2024 में इंडियन आर्मी का फॉर्म कब भरा जाएगा?
+       </mark>
+       <br>
+       ⬇️
+       <br>
+       अगर आप इस भर्ती में आवेदन करना चाहते हैं, तो आप इस भर्ती में 10 अप्रैल 2024 से आवेदन कर सकते हैं और मैं आपको बता दूं कि इसकी अंतिम तिथि 9 मई 2024 है, तो जो भी अभ्यर्थी इसमें आवेदन करना चाहते हैं वह 9 मई 2024 से पहले ही इसमें आवेदन कर लें क्योंकि 9 मई 2024 के बाद कोई भी अभ्यर्थी इसमें आवेदन नहीं कर सकेगा।
+       </div>
+     </details>
+   </b>
+   <br><br>
+   <b>
+     <details>
+       <summary>
+          BANKING FORM-FILL TIME DETAILS
+       </summary>
+       <div class="timedetaisl">
+         <br>
+         <mark>
+       Upcoming Bank Exams 2024
+         </mark>
+       <br>
+       ⬇️
+       <br>
+       Exam Exam Dates
+       IBPS Clerk 2024 Preliminary Exam Date: 24th, 25th, 31st August 2024 Mains Exam Date: 13th October 2024
+       IBPS PO 2024 Preliminary Exam Date: 19th, 20th October 2024 Mains Exam Date: 30th November 2024
+       </div>
+     </details>
+   </b>
+   <br><br>
+   <b>
+     <details>
+       <summary>
+          & OTHER EXAMS FORM-FILL TIME DETAILS
+       </summary>
+       <div class="timedetaisl">
+       <br><br>
+       <b>
+         <mark>
+         स्टूडेंट के रिक्वायर्ड के अनुसार कंपटीशन करवाया जाएगा ok
+         </mark>
+       </b>
+       </div>
+     </details>
+   </b>
+   
+ </center>
+</div>
+<!------------------------------>
+<br><br><br>
+  <b class="what">
+    What Will You
+  <b class="lern">
+    Lern 
+  </b>?</b>
+  <br><br>
+<!------------------------------>
+  <details class="details">
+    <summary class="summary">
+      <br>
+     SSC-GD TOPICK DETAILS
+      <hr>
+    </summary>
+    <div class="timedetaisltopick">
+      <bR><br>
+      <mark>
+        SSC GD में कितने सब्जेक्ट होते हैं?
+      </mark>
+      <bR>
+      ⬇️
+      <br>
+      एसएससी जीडी 2024 में, परीक्षा प्रारूप में कंप्यूटर आधारित परीक्षा शामिल होती है जिसमें कुल 100 अंकों और 100 प्रश्नों के साथ एक वस्तुनिष्ठ प्रकार का पेपर होता है। एसएससी जीडी परीक्षा पैटर्न 2024 में नीचे सूचीबद्ध अनुसार चार खंड/विषय शामिल हैं।
+    </div>
+  </details>
+  <br>
+<!------------------------------>
+  <details class="details">
+    <summary class="summary">
+      <br>
+      RAILWAY TOPICK DETAILS
+      <hr>
+    </summary>
+    <div class="timedetaisltopick">
+      <br><br>
+      <mark>
+        रेलवे में कौन कौन से सब्जेक्ट होते हैं
+      </mark>
+      <br>
+      ⬇️
+      <bR>
+      आरआरबी एनटीपीसी पाठ्यक्रम 2024 में तीन खंड शामिल हैं: सामान्य <br>जागरूकता, गणित, सामान्य बुद्धिमत्ता और तर्क ।
+    </div>
+  </details>
+  <br>
+<!------------------------------>
+     <details class="details">
+       <summary class="summary">
+         <br>
+         RPF TOPICK DETAILS
+         <hr>
+       </summary>
+       <div class="timedetaisltopick">
+          <br><br>
+          <mark>
+            आरपीएफ की सिलेबस क्या है?
+            <br>
+          </mark>
+          ⬇️
+          <br>
+          कांस्टेबल और सब-इंस्पेक्टर पदों के लिए आरपीएफ सिलेबस में 3 विषय शामिल हैं: जनरल अवेयरनेस, जनरल इंटेलिजेंस और रीजनिंग, और अंकगणित।
+       </div>
+     </details>
+     <br>
+<!------------------------------>
+<details class="details">
+  <summary class="summary">
+    <br>
+    BIHAR POLICE TOPICK DETAILS
+    <hr>
+  </summary>
+  <div class="timedetaisltopick">
+    <br><bR>
+    <mark>
+      बिहार पुलिस सिलेबस ै?
+    </mark>
+    <br>
+    ⬇️
+    <br>
+    बिहार पुलिस कांस्टेबल परीक्षा के पाठ्यक्रम में हिंदी, अंग्रेजी, गणित, इतिहास, भूगोल, राजनीति, भौतिकी, रसायन विज्ञान, जीव विज्ञान और अर्थशास्त्र जैसे विषय शामिल हैं।
+  </div>
+</details>
+<br>
+<!------------------------------>
+<details class="details">
+  <summary class="summary">
+    <br>
+    AGRNIVEER TOPICK DETAILS
+    <hr>
+  </summary>
+  <div class="timedetaisltopick">
+    <br><br>
+    <mark>
+      अग्निवीर परीक्षा 2024 का सिलेबस क्या है?
+    </mark>
+    <br>
+    ⬇️
+    <br>
+    अग्निवीर पाठ्यक्रम 2024 महत्वपूर्ण विषय
+    
+    अग्निवीर परीक्षा पाठ्यक्रम में चार खंड शामिल हैं, यानी सामान्य तर्क, सामान्य ज्ञान, सामान्य विज्ञान और गणित । उम्मीदवारों को पाठ्यक्रम की गहन समीक्षा करनी चाहिए और फिर उसके अनुसार प्रत्येक अनुभाग की तैयारी के लिए समय देना चाहिए
+  </div>
+</details>
+<br>
+<!------------------------------>
+<details class="details">
+  <summary class="summary">
+    <br>
+    BACKING TOPICK DETAILS
+    <hr>
+  </summary>
+  <div class="timedetaisltopick">
+     <br><br>
+     <mark>
+       बैंकिंग सिलेबस ैं?
+     </mark>
+     <br>
+     ⬇️
+     <br>
+     आईबीपीएस पीओ मुख्य परीक्षा में चार खंड शामिल हैं: रीजनिंग और कंप्यूटर एप्टीट्यूड, सामान्य/अर्थव्यवस्था/बैंकिंग जागरूकता, अंग्रेजी भाषा, और डेटा विश्लेषण और व्याख्या। इसके अतिरिक्त, अंग्रेजी भाषा (पत्र लेखन और निबंध) के लिए एक वर्णनात्मक परीक्षा भी है। मुख्य परीक्षा में कुल 200 एमसीक्यू होते हैं और यह 3 घंटे तक चलती है।
+  </div>
+</details>
+<br>
+<!------------------------------>
+<details class="details">
+  <summary class="summary">
+    <br>
+    & OTHER EXAMS TOPICK DETAILS
+    <hr>
+  </summary>
+  <div class="timedetaisltopick">
+<mark>
+    स्टूडेंट कंपटीशन के अनुसार टॉपिक पढ़ाया जाएगा ok
+</mark>
+  </div>
+</details>
+<br><br><br>
+<!------------------------------>
+<div class="Topmethod">
+  <div class="Topmethod1"data-aos="fade-zoom-in"
+  data-aos-easing="ease-in-back"
+  data-aos-delay="300"
+  data-aos-offset="0"></div>
+  <br>
+  <center>
+    <BR>
+      <B>
+        ALL EXAME PAGE DETAILS
+      </B>
+      <BR><BR><BR><BR>
+        <details>
+          <summary>
+            SSC-GD PAGE EXAME DETAILS
+          </summary>
+          <div class="timedetaisl">
+            <br>
+            <mark>
+            SSC GD ka पेपर कैसे होता है?
+            </mark>
+            <br>
+            ⬇️
+            <br>
+            एसएससी जीडी कांस्टेबल की लिखित परीक्षा सीबीटी मोड में आयोजित की जाती है। इसमें चार सेक्शन होते हैं, हर सेक्शन से 20 प्रश्न करने होते हैं और हर प्रश्न 2 अंक का होता है। एसएससी जीडी परीक्षा अवधि (ssc gd exam time duration in Hindi) 60 मिनट यानी 1 घंटा है। इसी अवधि में सभी 80 प्रश्नों के उत्तर देने होते हैं।
+          </div>
+        </details>
+    <BR><BR><BR><BR>
+      <details>
+        <summary>
+           RPF PAGE EXAME DETAILS
+        </summary>
+        <div class="timedetaisl">
+          <br>
+          <br>
+          <mark>
+            आरपीएफ में कितने पेपर होते हैं?
+          </mark>
+          <br>
+          ⬇️
+          <br>
+          आरपीएफ कांस्टेबल सिलेबस
+          2024<br>
+          क्या है? तीन विषयों
+          <br>से कुल 120 प्रश्न पूछे <br>
+          जायेंगे. परीक्षा की प्रभावी तैयारी के लिए उम्मीदवार
+          <br>
+          सभी विषयों के विस्तृत<br>
+          आरपीएफ कांस्टेबल पाठ्यक्रम की जांच कर सकते हैं।
+        </div>
+      </details>
+     <BR><BR><BR><BR>
+       <details>
+         <summary>
+            RAILWAY PAGE EXAME DETAILS
+         </summary>
+         <div class="timedetaisl">
+           <br><br>
+           <mark>रेलवे में कितने पेपर होते हैं?</mark>
+           <br>
+           ⬇️
+           <br>
+           आरआरबी ग्रुप डी परीक्षा में सामान्य विज्ञान और गणित में प्रत्येक में 25 प्रश्न होते हैं। जनरल इंटेलिजेंस और रीजनिंग में 30 प्रश्न और जनरल अवेयरनेस और करंट अफेयर्स में 20 प्रश्न हैं। हमने नीचे विषय-वार वेटेज प्रदान किया है।
+         </div>
+       </details>
+     <BR><BR><BR><BR>
+       <details>
+         <summary>
+           & OTHER EXAMS PAGE EXAME DETAILS
+         </summary>
+         <div class="timedetaisl">
+           <mark>
+           कंपटीशन के अनुसार  पेपर डिटेल प्रोवाइड किया जाएगा ok
+           </mark>
+         </div>
+       </details>
+      <BR><BR><BR><BR>
+        <details>
+          <summary>
+             BANKING PAGE EXAME DETAILS
+          </summary>
+          <div class="timedetaisl">
+            <bR><br>
+            <mark>
+              बैंक के पेपर में क्या क्या आता है?
+            </mark>
+            <bR>
+            ⬇️
+            <br>
+            परीक्षा में मुख्य रूप से 5 खंड होते हैं:
+            रीज़निंग एबिलिटी (मेन्स एंड प्रीलिम्स)
+            अंग्रेजी भाषा (मेन्स एंड प्रीलिम्स)
+            मात्रात्मक योग्यता (मेन्स एंड प्रीलिम्स)
+            सामान्य / अर्थव्यवस्था / वित्तीय / बैंकिंग जागरूकता (मेन्स)
+            कंप्यूटर एप्टीट्यूड (मेन्स)
+          </div>
+        </details>
+      <BR><BR><BR><BR>
+        <details>
+          <summary>
+            AGRNIVEER PAGE EXAME DETAILs
+          </summary>
+          <div class="timedetaisl">
+            <br><br>
+            <mark>
+              2024 में अग्निवीर का पेपर कब होगा?
+            </mark>
+            <br>
+            ⬇️
+            <br>
+            Agniveer Exam Date 2024: 22 अप्रैल से होगी अग्निवीर की ऑनलाइन परीक्षा, जारी हुआ Admit Card, एसे करें डाउनलोड
+          </div>
+        </details>
+      <BR><BR><BR><BR>
+     <details>
+       <summary>
+         BIHAR POLICE PAGE EXAME DETAILS
+       </summary>
+       <div class="timedetaisl">
+         <br><br>
+         <mark>
+           पुलिस के पेपर में क्या आता है?
+         </mark>
+         <br>
+         ⬇️
+         <br>
+         इस परीक्षा में सामान्य हिंदी, सामान्य ज्ञान, संख्यात्मक और मानसिक योग्यता परीक्षण, और मानसिक योग्यता/बुद्धिमत्ता/तर्क शामिल हैं। प्रत्येक गलत उत्तर के लिए 0.5 की नेगेटिव मार्किंग की जा रही है। यूपी पुलिस कॉन्स्टेबल भर्ती परीक्षा कल, 18 फरवरी, 2024 को समाप्त होने के बाद जल्द ही आंसर-की रिलीज की जा सकती है।
+       </div>
+       
+     </details>
+  </center>
+  <br><br>
+</div>
+<!------------------------------>
+<div class="WhoisCDSAfor">
+  <br><br><br>
+  <center data-aos="zoom-in" data-aos-easing="linear"
+  data-aos-duration="2000">
+  <b class="WhoisCDSAfor1">
+    <U>
+पता:हेमरा रोड (BP SCHOOL के 200 मीटर दक्षिण DON DOSCO SCHOOL के नजदीक)
+  </b>
+    <b class="WhoisCDSAfor2">
+      बेगुसराय 
+      </U>
+    </b>
+  </center>
+  <center>
+    REGISTRATION NOW
+    <br><br><br><br><br>
+  </center>
+  <!------massage email sand digine ok ------>
+ 	<div class="container">
+ 
+ 	  <form onsubmit="emailSend(); reset(); return false;">
+ 
+ 	    <input type="text" id="name" placeholder=" Student name" name="name" required class="input">
+ 
+ 	    <input type="text" id="phone" placeholder="phone" name="phone" required class="input">
+ 
+ 	    <input type="email" id="email" placeholder="email" name="email" required class="input">
+ 
+ 	    <input type="text" id="modher" placeholder="Mother Name" name="email" required class="input">
+ 
+ 	    <input type="text" id="fadher" placeholder="Fadher Name" name="email" required class="input">
+ 
+ 	    <input type="text" id="address" placeholder="Address Sort Ma  Fill ok" name="email" required class="input">
+ 
+ 	    <input type="text" id="studentage" placeholder="Student Age" name="email" required class="input">
+ 	    
+ 	    <input type="text" id="batchname" placeholder="batch name" name="email" required class="input">
+ 	    
+ 	    <button type="submit" class="btn">
+ 	      Submit
+ 	    </button>
+ 	  </form>
+ 	</div>  
+  
+
+</div>
+<center>
+<div class="pdflogo">
+  <br><br><br>
+  <h3>
+    THY GYANAM ACADEMY
+    <br>
+    <u>
+      Notes 
+    </u>
+  </h3>
+  <br><br><br>
+  <div class="noteslogohaiok">
+    <a href="/login (1).html">
+  <img src="/PSX_20240616_022754.png" width="110" height="100">
+    </a>
+  </div>
+</center>
+</div>
+<!---connect for social media page--->
+<center>
+ <b>CONNECT FOR SOCIAL MEDIA PAGE'S</b>
+ <br>
+<b><mark>CLICK ICON</mark></b>
+ <br><br>
+ <a href="https://www.instagram.com/gyanamacademy98?igsh=MW0wb2o4aWhlcXVzag%3D%3D&utm_source=qr">
+ <img src="/instagram.png" class="insta">
+ </a>
+ <a href="https://www.youtube.com/@TheGyanamAcademy">
+ <img src="/free-youtube-logo-icon-2431-thumb.png" class="insta">
+ </a>
+ <a href="https://www.facebook.com/share/U9jP4hd5mSmzuJZd/?mibextid=LQQJ4d">
+ <img src="/social-media-facebook-instagram-youtube-pinterest-tiktok-3d-logo-curve-shiny-logo-free-png.webp" class="insta">
+ </a>
+ <br><br><br>
+</center>
+</body>
+<!----- aso script hai ok ---->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+<script>
+  AOS.init();
+</script>
+<!---- form email script hai ok---->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+	</script>
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+
+	<script>
+	  function emailSend() {
+
+	    var userName = document.getElementById('name').value;
+	    var phone = document.getElementById('phone').value;
+	    var email = document.getElementById('email').value;
+	    var modher = document.getElementById('modher').value;
+	    var fadher = document.getElementById('fadher').value;
+	    var address = document.getElementById('address').value;
+	    var age = document.getElementById('studentage').value;
+	    var age = document.getElementById('batchname').value;
+	    
+	    var messageBody =
+	      "Name " + userName +
+	      "<br/> Phone " + phone +
+	      "<br/> Email " + email +
+	      "<br/> modher " + modher +
+	      "<br/> fadher " + fadher +
+	      "<br/> address " + address +
+	      "<br/> age " + age +
+	      "<br/> batchname " + batchname;
+	    Email.send({
+	      Host: "smtp.elasticemail.com",
+	      Username: "coachinggyanam@gmail.com",
+	      Password: "5F9D89D2CBB14D4033D77E79C1D2834C9F44",
+	      To: 'coachinggyanam@gmail.com',
+	      From: "coachinggyanam@gmail.com",
+	      Subject: "good student",
+	      Body: messageBody
+	    }).then(
+	      message => {
+	        if (message == 'OK') {
+	          swal("Secussful", "You clicked the button!", "success");
+	        }
+	        else {
+	          swal("Error", "You clicked the button!", "error");
+	        }
+	      }
+	    );
+	  }
+	</script>
+</html>
